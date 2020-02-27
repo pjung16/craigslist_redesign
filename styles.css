@@ -1,0 +1,282 @@
+body {
+  position: relative;
+  height: 97vh;
+  margin: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+.container {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.left-side {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  width: 33%;
+  margin-top: 10px;
+}
+
+.flag {
+  margin-right: 5px;
+}
+
+.language {
+  margin-top: -10px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;
+  width: 33%;
+}
+
+.right-side div:first-child {
+  margin-right: 15px;
+}
+
+.right-side .create-post {
+  height: 50px;
+  padding: 0 15px 0 15px;
+  background: #0066FF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 300px;
+  margin-top: 150px;
+}
+
+.title {
+  color: #0066FF;
+  font-size: 80px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.searchbar {
+  width: 760px;
+  height: 64px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+  font-size: 30px;
+  position: relative;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown {
+  width: 190px;
+  margin-left: -10px;
+  border: none;
+  height: 64px;
+  font-size: 30px;
+  border-right: solid #000000 1px;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  top: 16px;
+  right: 9px;
+}
+
+.search-field-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-field {
+  width: 550px;
+  margin-left: 10px;
+  border: none;
+  height: 64px;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+.browse-category {
+  font-size: 36px;
+  color: #0066FF;
+  opacity: 0.8;
+}
+
+.browse-category:hover {
+  opacity: 1;
+}
+
+footer {
+  background: #EAEAEA;
+  height: auto;
+  padding: 10px 0 10px 0;
+  width: 100vw;
+  margin-left: -50px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  font-family: Arial;
+  font-size: 16px;
+  color: #0000FF;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.black-text {
+  color: #000000
+}
+
+@media only screen and (max-width: 980px) {
+  .right-side {
+    font-size: 22px;
+  }
+  .right-side .create-post {
+    height: 40px;
+    padding: 0 10px 0 10px;
+  }  
+
+  .left-side {
+    font-size: 22px;
+  }
+  .location {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 806px) {
+  .right-side {
+    font-size: 20px;
+  }
+
+  .right-side .create-post {
+    height: 40px;
+    padding: 0 8px 0 8px;
+  }  
+
+  .title {
+    font-size: 60px;
+  }
+
+  .browse-category {
+    font-size: 21px;
+  }
+
+  .left-side {
+    font-size: 20px;
+  }
+  .language {
+    margin-top: -5px;
+  }
+  .location {
+    font-size: 25px;
+  }
+  .searchbar {
+    width: 85%;
+    height: 50px;
+  }
+  .search-field {
+    width: 85%;
+  }
+  .search-field-container {
+    width: 52vw;
+  }
+  .dropdown {
+    font-size: 3vw;
+    height: 50px;
+    width: 21vw;
+  }
+  .dropdown-arrow {
+    top: 7px;
+  }
+  .content {
+    height: 250px;
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .container {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .content{
+    position: absolute;
+    margin-top: 0;
+    top: calc(40vw + 50px);
+    width: 100%;
+  }
+  .pencil {
+    width: 4vw;
+  }
+  .left-side {
+    width: auto;
+  }
+  .location {
+    width: auto;
+    position: absolute;
+    width: 100%;
+    top: 56px;
+  }
+  .right-side {
+    width: auto;
+  }
+  footer {
+    margin-left: -15px;
+    margin-bottom: -10px;
+  }
+  .footer-content {
+    max-width: 310px;
+  }
+}
